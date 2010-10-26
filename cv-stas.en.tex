@@ -1,0 +1,251 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%
+% Forked by Stas Sușcov (stas@nerd.ro)
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+\setmonofont[Scale=0.8]{Inconsolata}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[dvipdfm, bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Stas Sușcov Résumé},
+	pdfauthor={Stas Sușcov},
+	pdfproducer={http://nitens.org/taraborelli/cvtex}
+]{hyperref}  
+\hypersetup{linkcolor=BrickRed,citecolor=BrickRed,filecolor=black,urlcolor=BrickRed} 
+
+% DOCUMENT
+\begin{document}
+{\LARGE Stas Sușcov}\\[1cm]
+\\
+ Cluj-Napoca,\\
+Romania\\[.2cm]
+Phone: \texttt{(+40)-76-56-55-963}\\[.2cm]
+email: \href{mailto:stas@nerd.ro}{stas@nerd.ro}\\
+\textsc{url}: \href{http://stas.nerd.ro/index.php/about/}{stas.nerd.ro}\\ 
+\vfill
+ Born:  August 29, 1987 --- Chișinău, Republic of Moldova\\
+Nationality:  Moldovan/Romanian
+
+%%\hrule
+\section*{Summary}
+\emph{Student, Open Source activist, freelance web developer, system and network administrator.} 
+
+%%\hrule
+\section*{Spoken Languages}
+ Romanian, Russian, English, Ukrainian
+
+%%\hrule
+\section*{Skills}
+ GNU/Linux (prefer Debian/Ubuntu), *BSD, OpenSolaris, system administration\\
+OpenVZ/Xen administration\\
+Allied Telesis and Cisco network equipment work experience\\
+Network services deployment and development\\
+PHP Web developer\\
+WordPress themes and plugins developer\\
+XHTML, CSS and JavaScript (mostly jQuery) developer\\
+gettext and most common i18n technologies experience in software (mostly web) localizations\\
+Debian packaging (most common, backports and bugfixes)\\
+\\
+Small projects and hacking with C, Python, Java, Ruby\\
+SCM and automatizations with Git, Subversion and Bash\\
+\\
+Cloud Computing with Eucalyptus, Mosso (Rackspace Cloud) and Amazon Web Services
+\\
+Facebook applications developer (mostly using Google's Appengine)
+
+%\hrule
+\section*{Education}
+\noindent
+\years{2010-current}\textsc{Informatics} at „Babeş-Bolyai” University from Cluj-Napoca, Romania\\
+\years{2007-2010}\textsc{Computer Science} at Technical University of Cluj-Napoca, Romania\\
+\years{2009}\textsc{Computer Science} at „Lucian Blaga” University from Sibiu, Romania\\
+\years{2003-2007}\textsc{Mathematics \& Informatics} at „Axente-Sever” Highschool, Mediaș, Romania
+
+%\hrule
+\section*{Professional Experience \& Works}
+
+\subsection*{Programming}
+\noindent
+\years{2010-present}Web Developer and Consultant at \emph{Inform Media}
+\begin{footnotesize}
+\\
+Assist and train developers at moving existing web infrastructure (closed source code) to WordPress (explain open source advantages).\\
+Help with the move by writing custom plugins for cloud infrastructure.
+\end{footnotesize}
+
+\years{2010}Web Developer at \emph{Google Summer of Code}
+\begin{footnotesize}
+\\
+Accepted as a student for \href{http://buddypress.org}{BuddyPress project} driven by \href{http://wordpressfoundation.org/}{WordPress Foundation}.\\
+Mentored by \href{http://scholarpress.net}{ScholarPress} hackers.\\
+The project was meant to implement the first LMS over a social network.\\
+\href{http://sushkov.wordpress.com/}{Development Blog} over summer.\\
+\href{http://scholarpress.github.com/buddypress-courseware/}{Project webpage}.\\
+Code is on \href{http://github.com/stas/eduroam-db}{GitHub}.
+\end{footnotesize}
+
+\years{2009-2010}Web Developer at \emph{Technical University of Cluj-Napoca}
+\begin{footnotesize}
+\\
+Rewrite the students intranet app.\\
+Code is on \href{http://github.com/stas/student.utcluj.ro}{GitHub}\\
+Implement \href{http://monitor.eduroam.org/database.php}{EduRoam Database}.\\
+Code is on \href{http://github.com/stas/eduroam-db}{GitHub}
+\end{footnotesize}
+
+\years{2010}Web Developer at \emph{Ubuntu Community Website Team}
+\begin{footnotesize}
+\\
+Create a facebook application that will allow users to place Ubuntu Countdown Banners on their profile pages.\\
+\href{http://www.facebook.com/apps/application.php?id=115718008445537}{Application on Facebook}\\
+Code is opensourced on Launchpad.net:\\
+\texttt{bzr branch lp:~sushkov/ubuntu-website/ubuntu-countdown-fb}\\
+Kindly reviewed on OMG!Ubuntu, Planet Ubuntu and Planet Gnome.
+\end{footnotesize}
+
+\years{2009}Web Developer and Consultant at \emph{Orpheus Capitals, Cluj-Napoca}
+\begin{footnotesize}
+\\
+Web service development, deployments and integration.\\
+Cloud computing (Rackspace Mosso) consultant and administrator for migration.\\
+Project manager and main developer for market databases synchronization tools.\\
+Custom intranet deployment with personal search engine using Namazu.
+\end{footnotesize}
+
+\years{2009}Web Developer at \emph{Sveatoslav.com}
+\begin{footnotesize}
+\\
+Develop and deploy a facebook application.\\
+Code is available under GPL on \href{http://github.com/stas/facebook-ideas-app}{GitHub}
+\end{footnotesize}
+
+\years{2007}Web Developer and Consultant at \emph{Mediaș City Hall}
+\begin{footnotesize}
+\\
+ Develop and redesign the website for Mediaș City Hall --- \href{http://primariamedias.ro}{PrimariaMedias.ro}\\
+ Migrate huge amount of data from Typo3 CMF to WordPress. Migrate forums to bbPress. Develop custom theme for both WordPress and bbPress, localize and internationalize both. Develop plugins for bbPress and WordPress.\\
+ Assist and consult for services optimization: DNS, mail server and web server.\\
+ First ever internationalized WordPress integrated with bbPress project.
+\end{footnotesize}
+
+\subsection*{System Administration}
+\noindent
+\years{2009-present}Network \& System Administraotr at \emph{Pop F. Ioan Law Bureau, Cluj-Napoca}
+\begin{footnotesize}
+\\
+GNU/Linux solutions consulting. Build and maintain local network and systems using free software solutions (Ubuntu).
+\end{footnotesize}
+
+\years{2008-2009}Network \& System Administraotr, Hacker at \emph{Technical University of Cluj-Napoca}
+\begin{footnotesize}
+\\
+Maintain web services, database servers, mail servers and firewalls. Write tools for LDAP integration. Develop tools for Eduroam RADIUS network. Testing and deployments for virtualization solution and hybrid operating systems.\\
+Maintain and rebuild networks using Allied Telesis and Cisco network equipment. Maintenance and deployment of email servers, databases and LDAP server.\\
+GNU/Linux and FreeBSD administration and deployments.\\
+Virtualization technologies and solutions consulting.\\
+Backup systems deployments and OpenSolaris/FreeBSD (ZFS) and GNU/Linux (RAID/LVM) based file servers. (Some) Web apps development and deployments.
+\end{footnotesize}
+
+\years{2008-2009}Network \& System Administraotr at \emph{Technical University of Cluj-Napoca Campus Hostel \#7}
+\begin{footnotesize}
+\\
+Maintain network services (DHCP, DNS, FTP, web servers, email servers), network architecture equipments (Linksys and Allied Telesis), file servers (FreeBSD), deploy student services (SSH and virtual servers). Firewall security.\\
+Maintain 2nd romanian freebsd mirror --- \href{http://freebsd.utcluj.ro}{freebsd.utcluj.ro}
+\end{footnotesize}
+
+\years{2008-2009}System Administrator and Web Consultant at \emph{LiberTV}
+\begin{footnotesize}
+\\
+Deploy and relaunch the whole platform as a new product at lupanar.tv\\
+P2P BitTorrent technologies scaling and capacity planning.
+Become part of the team for the new (just opensourced) LiberTV media distribution platform.\\
+Advocate and involve new people into the upcoming new version development process.\\
+Help and train developers to develop the next version using latest technologies (AJAX \& Web Services)
+\end{footnotesize}
+
+\years{2008}System Administrator \& Web Consultant at \emph{BlogBloc Blogging Network}
+\begin{footnotesize}
+\\
+Build and optimize their virtual servers on SliceHost.\\
+Assist and offer training/solutions for their blogging network.\\
+Develop and help with the custom solutions.
+\end{footnotesize}
+
+\section*{Projects \& Extra Activities}
+Free Software Group --- \href{http://softwareliber.ro}{softwareliber.ro}\\
+WordPress Romanian Localization Team driver --- \href{http://ro.wordpress.org}{ro.wordpress.org}\\
+Ubuntu Romanian Community core activist and contributor --- \href{http://ubuntu.ro}{ubuntu.ro}\\
+Launchpad --- \href{http://launchpad.net/~sushkov}{Launchpad.net/~sushkov}\\
+GitHub --- \href{http://github.com/stas/}{github.com/stas}\\
+Cluj-Napoca Linux User Group member\\
+Sibiu Linux User Group member --- \href{http://sblug.ro}{sblug.ro}\\
+GeekMeet speaker --- \href{http://geekmeet.ro}{geekrmeet.ro}\\
+WordCamp speaker --- \href{http://wordcamp.ro}{wordcamp.ro}
+
+\subsection*{Hobbies}
+ Movies (underground, indie films)\\
+Reading (mostly when travelling)\\
+Theatre (from recent experience)
+
+
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today\- •\- 
+% ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
+Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+\fontspec{Liberation Serif}\XeTeX }\\
+% ---- FILL IN THE FULL URL TO YOUR CV HERE
+\href{http://stas.github.com/cv-stas.en.pdf}{http://stas.github.com/cv-stas.en.pdf}}
+\end{center}
+
+\end{document}

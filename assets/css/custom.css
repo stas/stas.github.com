@@ -1,0 +1,29 @@
+/**
+ * Custom stuff
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Tenor+Sans&subset=latin,cyrillic);
+
+body {
+  padding: 50px;
+  font: 14px/1.5 "Tenor Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #777;
+}
+
+a, header > h1 {
+  color: #604878;
+}
+
+a:hover {
+  color: #534573;
+  color: #3B3973;
+}
+
+.face {
+  border: 0;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  float: left;
+  margin-right: 15px;
+}

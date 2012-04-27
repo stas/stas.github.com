@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ page.title }} &bull; {{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+
+    <link rel="openid.server" href="https://login.launchpad.net/+openid"/>
+    <link rel="openid.delegate" href="https://login.launchpad.net/+id/HDnmz4T"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.tagline }}</p>
+        <p class="view">
+          <img class="face" src="{{ site.face }}" alt="{{ site.face_alt }}">
+          {{ site.intro }}
+        </p>
+        <ul>
+          <li>{{ site.button_left }}</li>
+          <li>{{ site.button_mid }}</li>
+          <li>{{ site.button_right }}</li>
+        </ul>
+      </header>
+      <section>
+
+        {{ content }}
+
+      </section>
+      <footer>
+      <p>
+        <small>{{ site.copyright_note }}</small>
+        <br>
+        <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>.
+      </p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+  </body>
+</html>

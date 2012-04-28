@@ -1,5 +1,6 @@
 auto: true
-permalink: /:title
+permalink: /:title.html
+markdown: kramdown
 
 title: Stas Sușcov Journal
 tagline: Boy meets computer...

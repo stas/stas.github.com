@@ -80,3 +80,7 @@ ul.posts {
 h4.related {
   margin-bottom: 5px;
 }
+
+header > h1 {
+  letter-spacing: -1px;
+}

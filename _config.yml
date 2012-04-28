@@ -2,12 +2,15 @@ auto: true
 permalink: /:title.html
 markdown: kramdown
 
+uri: http://stas.github.com
+author: Stas Sușcov
+email: stas@nerd.ro
 title: Stas Sușcov Journal
 tagline: Boy meets computer...
 face: http://gravatar.com/avatar/39639fde05c65fae440b775989e55006?s=70
 face_alt: Stas's face
 intro: |
-  Hi, my name is Stas and this is my blog.
+  Hi, my name is Stas and this is my unfancy blog.
   <br>
   Feel free to check out the pages/links below 
   if you care to find out about my doings or habbits.

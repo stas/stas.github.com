@@ -18,13 +18,13 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>{{ site.title }}</h1>
-        <p>{{ site.tagline }}</p>
+        <h1><a href="{{ site.uri }}">{{ site.title }}</a></h1>
+        <h4>{{ site.tagline }}</h4>
         <p class="view">
           <img class="face" src="{{ site.face }}" alt="{{ site.face_alt }}">
           {{ site.intro }}
         </p>
-        <ul>
+        <ul class="links">
           <li>{{ site.button_left }}</li>
           <li>{{ site.button_mid }}</li>
           <li>{{ site.button_right }}</li>

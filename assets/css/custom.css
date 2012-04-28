@@ -10,12 +10,11 @@ body {
   color: #777;
 }
 
-a, header > h1 {
+a, h1, h2, h3, h4, h5, h6, .links strong {
   color: #604878;
 }
 
 a:hover {
-  color: #534573;
   color: #3B3973;
 }
 
@@ -26,4 +25,58 @@ a:hover {
   border-radius: 100px;
   float: left;
   margin-right: 15px;
+}
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.625em;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.625em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timestamp {
+  text-align: right;
+  font-style: italic;
+  font-size: 80%;
+  margin-bottom: 10px;
+}
+
+.prev-next {
+  margin-bottom: 10px;
+}
+
+.prev-next .next {
+  float: right;
+}
+
+ul.posts {
+  list-style: none;
+  padding-left: 0;
+}
+
+.posts li {
+  border-bottom: 1px dotted #DDD;
+  padding: 5px 0;
+}
+
+.posts span {
+  float: right;
+  font-style: italic;
+  font-size: 80%;
+}
+
+h4.related {
+  margin-bottom: 5px;
 }

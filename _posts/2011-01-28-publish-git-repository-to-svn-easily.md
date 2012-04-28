@@ -42,4 +42,4 @@ Happy forking!
    [2]: http://WordPress.org
    [3]: http://trac.edgewall.org/
    [4]: http://plugins.trac.wordpress.org/search?q=
-   [5]: http://stas.nerd.ro/blog/data/kep7P.png
+   [5]: http://dl.dropbox.com/u/20301790/blog/kep7P.png

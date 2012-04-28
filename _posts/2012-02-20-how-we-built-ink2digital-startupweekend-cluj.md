@@ -7,7 +7,7 @@ tags:
   - Thoughts
 ---
 
-As [I was writing][1], Cluj-Napoca needs more events like [Startup Weekend][2], and the proof of that could be spotted during last weekend. Just to make myself clear, while I enjoyed most of the aspects of this _contest_, here are some things I didn't like that much: 
+As I was writing, Cluj-Napoca needs more events like [Startup Weekend][2], and the proof of that could be spotted during last weekend. Just to make myself clear, while I enjoyed most of the aspects of this _contest_, here are some things I didn't like that much: 
 
   * A project can win just by having a nice pitch/presentation
   * A lot of time was wasted because there were no clear rules that no one wants projects designed for google ads revenue

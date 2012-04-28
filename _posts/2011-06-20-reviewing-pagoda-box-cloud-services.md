@@ -40,7 +40,7 @@ Give it a shot [here: courseware.pagodabox.com][14]. By the way, looks like [Ubu
    [1]: http://code.google.com/intl/en-US/appengine/
    [2]: http://www.heroku.com/
    [3]: http://www.pagodabox.com/
-   [4]: http://stas.nerd.ro/blog/data/ui4tC.png
+   [4]: http://dl.dropbox.com/u/20301790/blog/ui4tC.png
    [5]: http://git-scm.com/
    [6]: https://github.com/
    [7]: http://wordpress.org/

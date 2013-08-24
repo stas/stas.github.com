@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400&subset=latin,latin-ext);
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+body {
+  background: url('../images/stas-at-clujcowork-autumn-2012.jpg') no-repeat top left;
+  background-size: 100%;
+}
+
+#about {
+  width: 30%;
+  margin-top: 5%;
+  padding: 10px 20px 10px 40px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+#credit {
+  font-size: 60%;
+  font-weight: 300;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px), screen and (max-width: 800px) {
+  #about {
+    font-size: 90%;
+    margin-top: 1%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #about {
+    width: 300px;
+    margin-top: 280px;
+    font-size: 90%;
+    margin-left: 0;
+  }
+
+  #credit {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #about {
+    width: 260px;
+    margin-top: 240px;
+    font-size: 90%;
+    margin-left: 0;
+  }
+
+  #credit {
+    position: relative;
+  }
+}

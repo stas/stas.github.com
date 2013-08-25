@@ -10,7 +10,7 @@ layout: default
 ## Stas Sușcov
 
 I live in Cluj-Napoca, Transylvania. After years of involvement
-in open source I start building startups for fun and profit.
+in open source I started building startups for fun and profit.
 
 I co-created
 [Circularia](http://circularia.com) in 2011 and then

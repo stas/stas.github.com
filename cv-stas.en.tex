@@ -3,8 +3,8 @@
 % Typesetting your academic CV in LaTeX
 %
 % URL: http://nitens.org/taraborelli/cvtex
-% DISCLAIMER: This template is provided for free and without any guarantee 
-% that it will correctly compile on your system if you have a non-standard  
+% DISCLAIMER: This template is provided for free and without any guarantee
+% that it will correctly compile on your system if you have a non-standard
 % configuration.
 % Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
 %
@@ -15,10 +15,10 @@
 %!TEX encoding = UTF-8 Unicode
 
 \documentclass[10pt, a4paper]{article}
-\usepackage{fontspec} 
+\usepackage{fontspec}
 
 % DOCUMENT LAYOUT
-\usepackage{geometry} 
+\usepackage{geometry}
 \geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
 \setlength\parindent{0in}
 
@@ -27,8 +27,11 @@
 \usepackage{xunicode}
 \usepackage{xltxtra}
 \defaultfontfeatures{Mapping=tex-text}
-\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
-\setmonofont[Scale=0.8]{Inconsolata}
+\setromanfont[
+        Ligatures={Common},
+        Numbers={OldStyle}
+]{Source Serif Pro Light}
+\setmonofont{Source Serif Pro Light}
 
 % ---- CUSTOM COMMANDS
 \chardef\&="E050
@@ -44,299 +47,250 @@
 \reversemarginpar
 
 % HEADINGS
-\usepackage{sectsty} 
-\usepackage[normalem]{ulem} 
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
 \sectionfont{\mdseries\upshape\Large}
-\subsectionfont{\mdseries\scshape\normalsize} 
-\subsubsectionfont{\mdseries\upshape\large} 
+\subsectionfont{\mdseries\scshape\normalsize}
+\subsubsectionfont{\mdseries\upshape\large}
 
 % PDF SETUP
 % ---- FILL IN HERE THE DOC TITLE AND AUTHOR
-\usepackage[dvipdfm, bookmarks, colorlinks, breaklinks, 
+\usepackage[
+        dvipdfm, bookmarks, colorlinks, breaklinks,
 % ---- FILL IN HERE THE TITLE AND AUTHOR
-	pdftitle={Stas Sușcov Résumé},
-	pdfauthor={Stas Sușcov},
-	pdfproducer={http://nitens.org/taraborelli/cvtex}
-]{hyperref}  
-\hypersetup{linkcolor=BrickRed,citecolor=BrickRed,filecolor=black,urlcolor=BrickRed} 
+        pdftitle={Stas Sușcov Résumé}, pdfauthor={Stas Sușcov},
+        pdfproducer={http://nitens.org/taraborelli/cvtex}
+]{hyperref}
+\hypersetup{
+        linkcolor=RoyalPurple,
+        citecolor=RoyalPurple,
+        filecolor=black,
+        urlcolor=RoyalPurple
+}
 
 % DOCUMENT
 \begin{document}
-{\LARGE Stas Sușcov}\\[1cm]
-\\
- Cluj-Napoca,\\
-Transilvania\\[.2cm]
-Phone: \texttt{(+40)-76-56-55-963}\\[.2cm]
-email: \href{mailto:stas@nerd.ro}{stas@nerd.ro}\\
-\textsc{url}: \href{http://stas.nerd.ro/index.php/about/}{stas.nerd.ro}\\ 
-\vfill
- Born:  August 29, 1987 --- Chișinău, Republic of Moldova\\
-Nationality:  Moldovan/Romanian
 
-%%\hrule
-\section*{Summary}
-\emph{Open Source activist, freelance web developer, system and network administrator.} 
+{\LARGE Stas Sușcov}
+\\[1cm]
+Cluj-Napoca, Transylvania
+\\[.2cm]
+\href{mailto:stas@nerd.ro}{stas@nerd.ro},
+\href{http://stas.nerd.ro/}{http://stas.nerd.ro},
+\href{http://ampersate.com/}{http://ampersate.com}
+\\[.2cm]
+\texttt{(+40) 76-56-55-963}
+% \vfill
 
 %%\hrule
 \section*{Spoken Languages}
- Romanian, Russian, English, Ukrainian
-
-%%\hrule
-\section*{Skills}
-GNU/Linux (Debian/Ubuntu mostly), *BSD, OpenSolaris, system administration\\
-Continuous Integration (Travis-CI, TDDium (SolanoLabs), Jenkins, Buildbot, Heroku)\\
-Web Operations (AWS Stack, Linode, Rackspace, Nginx, Capistrano, Vlad, NewRelic)\\
-System Operations and Provisioning (OpenVZ, Xen, SaltStack, Sprinkle, Monit, NFS, various MTA/MDA)\\
-SQL and NoSQL databases (MySQL, PostgreSQL, SQLite, Redis, CouchDB, Memcache)\\
-Ruby Development (Rails, Rails Engines, Rack, Ramaze, Sinatra, RSpec, Bacon, Webrat, Capybara)\\
-JavaScript Development (jQuery, Ember.js, Jasmine, Mocha + Chai, Phantom.js)\\
-PHP development (WordPress, BuddyPress, bbPress, GlotPress, CakePHP, PHPUnit)\\
-Python development (Google AppEngine, Twisted, PyUnit, Nose, Paver)\\
-gettext and other i18n technologies experience in software (mostly web) localizations\\
-Debian packaging (most common, backports and bugfixes)\\
-Allied Telesis and Cisco network equipment management experience\\
-\\
-Can hack C and Java code if really needed.\\
-SCM with Git, Subversion, Bazaar, Mercurial and automatization with GNU Make and Bash\\
-\\
-Facebook applications developer (Google Appengine, Heroku)
+Romanian, English, Ukrainian, Russian
 
 %\hrule
 \section*{Education}
 \noindent
-\years{2010-current}\textsc{Informatics} at „Babeş-Bolyai” University from Cluj-Napoca, Romania\\
-\years{2007-2010}\textsc{Computer Science} at Technical University of Cluj-Napoca, Romania\\
+\years{2010-2016}\textsc{Computer Science} at „Babeș-Bolyai” University from Cluj-Napoca, Romania\\
 \years{2009}\textsc{Computer Science} at „Lucian Blaga” University from Sibiu, Romania\\
-\years{2003-2007}\textsc{Mathematics \& Informatics} at „Axente-Sever” Highschool, Mediaș, Romania
+\years{2007-2010}\textsc{Computer Science} at Technical University of Cluj-Napoca, Romania\\
+\years{2003-2007}\textsc{Mathematics and Informatics} at „Axente-Sever” Highschool, Mediaș, Romania
 
 %\hrule
-\section*{Professional Experience \& Works}
+\section*{Professional Experience}
 
-\subsection*{Programming}
-\noindent
-
-\years{2012-present}Creator of Courseware \emph{\href{http://coursewa.re}{Coursewa.re}}
-\begin{footnotesize}
+\years{2014-2016}Lead Developer at Flavma Inc. • \emph{\href{http://flavma.com}{Flavma.com}}
 \\
-SaaS platform for building social learning environments.\\
-AWS (EC2, SES, S3), Heroku Postgres, Memcache, Zurb Foundation.\\
-Privately owned. Self bootstrapped.
+\begin{footnotesize}
+One of the first technical employees. I led the technical decisions, ops and
+team development helping the company grow from 7 to 30+ employees.
+One of the major challenges was to build the data processing pipeline for our
+vendor integrations (over 5k files per day, resulting in gigabytes of data to
+process) with post processing and data mining operations.
+I also led the devops where one of the biggest challenge was to scale our
+customer base while keeping the infrastructure expenses at minimum.
+\end{footnotesize}
+\\[.2cm]
+
+\years{2013-2014}Cofounder of the Founden • \emph{\href{https://github.com/Founden}{Founden.com}}
+\\
+\begin{footnotesize}
+Technical lead, helped build a new team. We iterated through over 4 prototypes
+in less than a year. Due to lack of further funding we decided to open source
+all of our work. The story of this venture is available on
+\href{http://ampersate.com/the-last-7-months-of-our-venture}{ampersate.com}.
+\end{footnotesize}
+\\[.2cm]
+
+\years{2012-2013}Cofounder of the Courseware Project • \emph{\href{http://coursewa.re}{Coursewa.re}}
+\\
+\begin{footnotesize}
+One of the startups I bootstrapped. After working for two years on the Google
+Summer Of Code scholarships for an e-learning project, I decided to build a
+SaaS product. Courseware is a SaaS for everyone who wants to start a virtual
+classroom, with: courses, grades, attendance, assessments and certificates. Due
+to lack of cash and one of the founders leaving the project, I decided to close
+it and open-source everything. Courseware is one of my favorite projects.
+You can read the full story on
+\href{http://ampersate.com/moving-on}{ampersate.com}.
+\end{footnotesize}
+\\[.2cm]
+
+\years{2012 Autumn}Web Operations at AppThemes • \emph{\href{http://appthemes.com/about}{AppThemes.com}}
+\\
+\begin{footnotesize}
+Led the migration of the whole infrastructure into cloud (Linode).
+Configurations management with SaltStack. CI and CD with Jenkins with
+production and staging application servers and master-slave databases.
+Most of the project sources are now
+\href{https://github.com/AppThemes/salt-config-example}{open source}.
+\end{footnotesize}
+\\[.2cm]
+
+\years{2012 Autumn}Consultant for Licensecompanion, Inc. • \emph{\href{http://www.licensecompanion.com/}{LicenseCompanion.com}}
+\\
+\begin{footnotesize}
+Ember.js consulting and development for a search engine application to work
+with Solr.
+\end{footnotesize}
+\\[.2cm]
+
+\years{2012 Summer}Software Developer at SkinVision • \emph{\href{http://skinvision.com}{SkinVision.com}}
+\\
+\begin{footnotesize}
+Skin cancer detection and monitoring software.
+Our team built and scaled the web services including image processing API.
+We also automated the UV index tracker (handling dozens of gigabytes of data).
+\end{footnotesize}
+\\[.2cm]
+
+\years{2012 Spring}Software Developer at ProAtria Ltd. • \emph{\href{https://www.sftpplus.com/}{SFTPPlus}}
+\\
+\begin{footnotesize}
+Enterprise grade file transfer software solutions written in Python (Twisted).
+One of my responsibilities was to add the centralised logging (primarily for
+SQLite, but not only) and build a web client prototype for the administration
+panel.
+\end{footnotesize}
+\\[.2cm]
+
+\years{2011-2013}Cofounder of Risktronics/Circularia • \emph{\href{http://circularia.com}{Circularia.com}}
+\\
+\begin{footnotesize}
+Fintech software as a service based on the concept of rotating savings and
+credit association. Self bootstrapped, now defunct.
+\end{footnotesize}
+\\[.2cm]
+
+\years{2010-2011}Consultant at \emph{Inform Media}
+\\
+\begin{footnotesize}
+Media and publishing software solutions.
+Helped train and migrate existing closed source solutions to
+WordPress and other open source technologies.
+\end{footnotesize}
+\\[.2cm]
+
+\years{2010}Member of the \emph{Ubuntu Website Team} • \emph{\href{https://launchpad.net/~ubuntu-website}{Launchpad.net}}
+\\
+\begin{footnotesize}
+Initiator and author of the WordPress-LoCo project used by official and local
+communities to build web resources following Ubuntu guidelines.  Created a
+facebook application that will allow users to place Ubuntu Countdown Banners on
+their profile pages.
+\end{footnotesize}
+\\[.2cm]
+
+\years{2010, 2011}Web Developer at \emph{Google Summer of Code} • \emph{\href{http://buddypress.coursewa.re/}{BuddyPress.Coursewa.re}}
+\\
+\begin{footnotesize}
+Accepted as a student for \href{http://buddypress.org}{BuddyPress project}
+under \href{http://wordpressfoundation.org/}{WordPress Foundation}.  Mentored
+by John James Jacoby and \href{http://scholarpress.net}{ScholarPress} fellows:
+Boone Gorges and Jeremy Boggs.  The project objective was to implement the
+first learning management system over a social network.
+\end{footnotesize}
+\\[.2cm]
+
+\years{2009-2012}Network Administrator at \emph{Pop F. Ioan Law Bureau}
+\\
+\begin{footnotesize}
+GNU/Linux solutions consulting. Helped switch over to open source solutions
+saving thousands of dollars.
+\end{footnotesize}
+\\[.2cm]
+
+\years{2009}Consultant at \emph{Orpheus Capitals} • \emph{\href{http://www.orpheusindices.com/}{OrpheusIndices.com}}
+\\
+\begin{footnotesize}
+Led the team responsible for building a centralised database of historical
+stock market indices for US, India and Romania regions.
+Syncing operations resulted in hundreds of gigabytes of indexed and searchable
+data.
+\end{footnotesize}
+\\[.2cm]
+
+\years{2008-2010}Software Developer and DevOps at \emph{Technical University of Cluj-Napoca} • \emph{\href{http://cc.utcluj.ro/}{CC.UTCluj.ro}}
+\\
+\begin{footnotesize}
+One of the maintainers of the web, database, directory service, mail servers
+and firewall services.
+Led the campus hostel \#7 network administration and architecture.
+Network administration using Allied Telesis and Cisco network equipment.
+GNU/Linux and FreeBSD administration and container based solutions (OpenVZ,
+FreeBSD Jails).
+Backup systems deployments and OpenSolaris/FreeBSD (ZFS) and
+GNU/Linux (RAID/LVM) based file servers.
+One of the maintainers of the 2nd romanian FreeBSD mirror ---
+\href{http://freebsd.utcluj.ro}{freebsd.utcluj.ro}\\
+Led the team responsible for the rewrite of the intranet web resources related
+to student services and federated WiFi authentication services.
+\href{http://github.com/stas/student.utcluj.ro}{Student services codebase}.
+\href{http://github.com/stas/eduroam-db}{WiFi services codebase}.
+\end{footnotesize}
+\\[.2cm]
+
+\years{2008-2009}Web Operations at \emph{LiberTV}
+\\
+\begin{footnotesize}
+Helped build the next version of one of the first P2P BitTorrent media
+distribution platform. Project is now defunct and was open sourced due to
+lack of funding.
+\end{footnotesize}
+\\[.2cm]
+
+\years{2007}Web Developer at \emph{Mediaș City Hall} • \emph{\href{http://www.primariamedias.ro/}{PrimariaMedias.ro}}
+\\
+\begin{footnotesize}
+While in high school, I won the contest to lead the rewrite of the Mediaș City
+Hall website. One of the challenges was to handle the archives by migrating
+hundreds of posts and pages from from Typo3 CMF to WordPress and securing the
+web services.
 \end{footnotesize}
 
-\years{2011-present}Co-creator of Risktronics, now Circularia \emph{\href{http://risktronics.net}{Risktronics.net}}, \emph{\href{http://circularia.com}{Circularia.com}}
-\begin{footnotesize}
-\\
-BDD web development in Ruby with Ramaze and Rack\\
-Webrat and Bacon (RSpec wrapper) for unit-testing and acceptance testing.\\
-Cloud deployment to Heroku. Off-site mailing services with AWS SES.\\
-Used Redis, Memcache, Resque, NewRelic and Twitter's Bootstrap.
-\end{footnotesize}
+\section*{Affiliations}
 
-\years{2012 Nov}Ember.js consultant for Licensecompanion, Inc. \emph{\href{http://www.licensecompanion.com/}{LicenseCompanion.com}}
-\begin{footnotesize}
-\\
-Ember.js consulting and development for a search engine application to work with Solr.\\
-Require.js, BDD with Jasmine.\\
-Some automation with Paver (Python).
-\end{footnotesize}
-
-\years{2012 Summer}Development and Operations at SkinVision BV \emph{\href{http://skinvision.com}{SkinVision.com}}
-\begin{footnotesize}
-\\
-BDD web development in with Ruby on Rails.\\
-RSpec and Cucumber with CI.\ PostgreSQL DBA.\ AWS Cloud (EC2, S3, SES).\\
-Workload distribution and integration for image processing with custom workers (JVM).\\
-Automated UV index tracker, CouchDB used for storage (aprox.\ one million records when I left).\\
-Mobile API design. Push notifications for iOS and Android.
-\end{footnotesize}
-
-\years{2012 Feb}Co-creator of Ink2Digital \emph{\href{http://ink2digital.com}{Ink2Digital.com}}
-\begin{footnotesize}
-\\
-A Startup Weekend venture.\\
-We built this during a couple of hours using Rails, AWS (EC2, RDS), Resque and ImageMagic.\\
-I took care of background job workers, convertor and JavaScript viewer.
-\end{footnotesize}
-
-\years{2012 Spring}Python and JavaScript Developer at SFTPPlus \emph{ProAtria Ltd.}
-\begin{footnotesize}
-\\
-TDD development with Python Twisted on a new logging module with SQLite.\\
-Further integration with existing JSONRPC web service.\\
-Rewrote (in progress) of the old jQuery web administration panel using Ember.js.\\
-Replaced Selenium with PhantomJS and Mocha test runner with Chai.\\
-Some of the used tehnologies include Require.js, Handlebars, Twitter's Bootstrap.
-\end{footnotesize}
-
-\years{2011 Summer}Web Developer at \emph{Google Summer of Code}
-\begin{footnotesize}
-\\
-Accepted as a student for \href{http://buddypress.org}{BuddyPress project} driven by \href{http://wordpressfoundation.org/}{WordPress Foundation}.\\
-Mentored by \href{http://johnjamesjacoby.com}{John James Jacoby}.\\
-The project was meant to continue development of the Courseware project for their internal infrastructure.\\
-Project lives at \href{http://coursewa.re}{Coursewa.re}.
-\end{footnotesize}
-
-\years{2009-2010}Freelance Python/Google AppEngine Web Developer
-\begin{footnotesize}
-\\
-Wrote a couple of Facebook applications using Google AppEngine:
-\href{http://apps.facebook.com/omnipass/}{OMNIPASS Agenda} for \emph{OMNIPASS}\\
-\href{http://apps.facebook.com/biz-quiz/}{Biz Magazine 10th anniversary} for \emph{Revista Biz}
-\end{footnotesize}
-
-\years{2010-2011}Web Developer and Consultant at \emph{Inform Media}
-\begin{footnotesize}
-\\
-Assist and train developers at moving existing web infrastructure (closed source code) to WordPress (explain open source advantages).\\
-Help with the move by writing custom plugins for cloud infrastructure.
-\end{footnotesize}
-
-\years{2010}WordPress Web Developer for \emph{Ubuntu Romanian LoCo}
-\begin{footnotesize}
-\\
-Initiator and author of WordPress-LoCo project, like Drupal-LoCo project.\\
-Now maintainer of \href{https://launchpad.net/ubuntu-website}{WordPress Ubuntu Light Theme} repository.
-\end{footnotesize}
-
-\years{2010}Web Developer at \emph{Google Summer of Code}
-\begin{footnotesize}
-\\
-Accepted as a student for \href{http://buddypress.org}{BuddyPress project} driven by \href{http://wordpressfoundation.org/}{WordPress Foundation}.\\
-Mentored by \href{http://scholarpress.net}{ScholarPress} hackers.\\
-The project was meant to implement the first LMS over a social network.\\
-\href{http://sushkov.wordpress.com/}{Development Blog} over summer.\\
-\href{http://scholarpress.github.com/buddypress-courseware/}{Project webpage}.
-\end{footnotesize}
-
-\years{2009-2010}Web Developer at \emph{Technical University of Cluj-Napoca}
-\begin{footnotesize}
-\\
-Rewrite the students intranet app.\\
-Code is on \href{http://github.com/stas/student.utcluj.ro}{GitHub}\\
-Implement \href{http://monitor.eduroam.org/database.php}{EduRoam Database}.\\
-Code is on \href{http://github.com/stas/eduroam-db}{GitHub}
-\end{footnotesize}
-
-\years{2010}Web Developer at \emph{Ubuntu Community Website Team}
-\begin{footnotesize}
-\\
-Create a facebook application that will allow users to place Ubuntu Countdown Banners on their profile pages.\\
-\href{http://www.facebook.com/apps/application.php?id=115718008445537}{Application on Facebook}\\
-Code is opensourced on Launchpad.net:\\
-\texttt{bzr branch lp:~sushkov/ubuntu-website/ubuntu-countdown-fb}\\
-Kindly reviewed on OMG!Ubuntu, Planet Ubuntu and Planet Gnome.
-\end{footnotesize}
-
-\years{2009}Web Developer and Consultant at \emph{Orpheus Capitals, Cluj-Napoca}
-\begin{footnotesize}
-\\
-Web service development, deployments and integration.\\
-Cloud computing (Rackspace Mosso) consultant and administrator for migration.\\
-Project manager and main developer for market databases synchronization tools.\\
-Custom intranet deployment with personal search engine using Namazu.
-\end{footnotesize}
-
-\years{2009}Web Developer at \emph{Sveatoslav.com}
-\begin{footnotesize}
-\\
-Develop and deploy a facebook application.\\
-Code is available under GPL on \href{http://github.com/stas/facebook-ideas-app}{GitHub}
-\end{footnotesize}
-
-\years{2007}Web Developer and Consultant at \emph{Mediaș City Hall}
-\begin{footnotesize}
-\\
- Develop and redesign the website for Mediaș City Hall --- \href{http://primariamedias.ro}{PrimariaMedias.ro}\\
- Migrate huge amount of data from Typo3 CMF to WordPress. Migrate forums to bbPress. Develop custom theme for both WordPress and bbPress, localize and internationalize both. Develop plugins for bbPress and WordPress.\\
- Assist and consult for services optimization: DNS, mail server and web server.\\
- First ever internationalized WordPress integrated with bbPress project.
-\end{footnotesize}
-
-\subsection*{System Administration}
-\noindent
-
-\years{2012 Autumn}Web Operations at AppThemes \emph{\href{http://appthemes.com/about}{AppThemes.com}}
-\begin{footnotesize}
-\\
-Migrate their whole infrastructure into cloud (Linode).\\
-Configurations management with SaltStack. Deployments through Git/Github, integrated with SaltStack and Jenkins.\\
-Infrastructure split into production and staging application servers with master-slave databases.\\
-Servers: Nginx and PHP-FPM, NFS, Memcache, Postfix.\\
-Monitoring with Monit.
-\end{footnotesize}
-
-\years{2009-2012}Network \& System Administraotr at \emph{Pop F. Ioan Law Bureau, Cluj-Napoca}
-\begin{footnotesize}
-\\
-GNU/Linux solutions consulting. Build and maintain local network and systems using free software solutions (Ubuntu).
-\end{footnotesize}
-
-\years{2008-2009}Network \& System Administraotr, Hacker at \emph{Technical University of Cluj-Napoca}
-\begin{footnotesize}
-\\
-Maintain web services, database servers, mail servers and firewalls. Write tools for LDAP integration. Develop tools for Eduroam RADIUS network. Testing and deployments for virtualization solution and hybrid operating systems.\\
-Maintain and rebuild networks using Allied Telesis and Cisco network equipment. Maintenance and deployment of email servers, databases and LDAP server.\\
-GNU/Linux and FreeBSD administration and deployments.\\
-Virtualization technologies and solutions consulting.\\
-Backup systems deployments and OpenSolaris/FreeBSD (ZFS) and GNU/Linux (RAID/LVM) based file servers. (Some) Web apps development and deployments.
-\end{footnotesize}
-
-\years{2008-2009}Network \& System Administraotr at \emph{Technical University of Cluj-Napoca Campus Hostel \#7}
-\begin{footnotesize}
-\\
-Maintain network services (DHCP, DNS, FTP, web servers, email servers), network architecture equipments (Linksys and Allied Telesis), file servers (FreeBSD), deploy student services (SSH and virtual servers). Firewall security.\\
-Maintain 2nd romanian freebsd mirror --- \href{http://freebsd.utcluj.ro}{freebsd.utcluj.ro}
-\end{footnotesize}
-
-\years{2008-2009}System Administrator and Web Consultant at \emph{LiberTV}
-\begin{footnotesize}
-\\
-Deploy and relaunch the whole platform as a new product at lupanar.tv\\
-P2P BitTorrent technologies scaling and capacity planning.
-Become part of the team for the new (just opensourced) LiberTV media distribution platform.\\
-Advocate and involve new people into the upcoming new version development process.\\
-Help and train developers to develop the next version using latest technologies (AJAX \& Web Services)
-\end{footnotesize}
-
-\years{2008}System Administrator \& Web Consultant at \emph{BlogBloc Blogging Network}
-\begin{footnotesize}
-\\
-Build and optimize their virtual servers on SliceHost.\\
-Assist and offer training/solutions for their blogging network.\\
-Develop and help with the custom solutions.
-\end{footnotesize}
-
-\pagebreak
-
-\section*{Projects \& Extra Activities}
 Free Software Group --- \href{http://softwareliber.ro}{softwareliber.ro}\\
-Ubuntu Romanian Community core activist and contributor --- \href{http://ubuntu.ro}{ubuntu.ro}\\
-GitHub --- \href{http://github.com/stas/}{github.com/stas}\\
-Launchpad --- \href{http://launchpad.net/~sushkov}{Launchpad.net/~sushkov}\\
-Cluj-Napoca Linux User Group member\\
+Ubuntu Romanian Community --- \href{http://ubuntu.ro}{ubuntu.ro}\\
+Open source contributions on Launchpad --- \href{http://launchpad.net/~sushkov}{Launchpad.net/~sushkov}\\
+Open source contributions on GitHub --- \href{http://github.com/stas/}{github.com/stas}\\
+Cluj-Napoca Linux User Group member --- \href{https://groups.google.com/d/forum/cjlug}{CJLUG on Google Groups} \\
 Sibiu Linux User Group (now defunct) --- \href{http://sblug.ro}{sblug.ro}\\
-GeekMeet speaker and organizer --- \href{http://geekmeet.ro}{geekmeet.ro}\\
-WordCamp speaker --- \href{http://wordcamp.ro}{wordcamp.ro}\\
+GeekMeet --- \href{http://geekmeet.ro}{geekmeet.ro}\\
+WordCamp --- \href{http://wordcamp.ro}{wordcamp.ro}\\
 Former WordPress Romanian Localization Team coordinator --- \href{http://ro.wordpress.org}{ro.wordpress.org}\\
-
-\subsection*{Hobbies}
-Love to cook and taste wine.\\
-Cycling (basically my main mean of transport when it is not cold outside)\\
-Music: \href{http://www.last.fm/user/c00l2sv}{Last.fm}\\
-Movies: \href{http://mubi.com/users/287401}{Mubi.com}
-
+WordCamp Transilvania --- \href{https://2013.transylvania.wordcamp.org/}{2013.transylvania.wordcamp.org}\\
+RailsGirls Cluj-Napoca (2014) --- \href{http://railsgirls.com/cluj}{railsgirls.com/cluj}
 
 %\vspace{1cm}
 \vfill{}
 %\hrulefill
 
 \begin{center}
-{\scriptsize  Last updated: \today\- •\- 
+{\scriptsize  Last updated: \today\- •\-
 % ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
-Typeset in \href{http://nitens.org/taraborelli/cvtex}{\fontspec{Liberation Serif}\XeTeX }\\
+Typeset in \href{http://nitens.org/taraborelli/cvtex}{\fontspec{Source Serif Pro}\XeTeX }\\
 % ---- FILL IN THE FULL URL TO YOUR CV HERE
-\href{http://stas.github.com/cv-stas.en.pdf}{http://stas.github.com/cv-stas.en.pdf}}
+\href{https://github.com/stas/stas.github.com/commits/resume}{Source code on GitHub}
+}
 \end{center}
 
 \end{document}

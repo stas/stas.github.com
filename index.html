@@ -38,6 +38,11 @@
         font-size: 2.0rem;
       }
 
+      input[type="text"] {
+        margin-bottom: 5px;
+        border-width: 0 0 1px 0;
+      }
+
       .container {
         display: flex;
       }
@@ -81,12 +86,20 @@
         <h1>Stas Sușcov</h1>
         <p>
           I work with computers. You can follow me
-          <a href="https://twitter.com/suscov">on Twitter</a> or
-          <a href="https://angel.co/suscov">on AngelList</a>. Occasionally I
-          write on <a href="http://ampersate.com/">Ampersate</a>.
+          <a href="https://angel.co/suscov">on AngelList</a> or subscribe to
+          <a href="https://tinyletter.com/ampersate/letters/about">
+            my monthly newsletter below</a>.
+          Occasionally I write on <a href="http://ampersate.com/">Ampersate</a>.
         </p>
         <p>
-          I live in Transylvania from the age of 16. That very same
+          <form action="https://tinyletter.com/ampersate" method="post" target="popupwindow">
+            <input type="text" name="email" placeholder="Your email..." />
+            <input type="hidden" value="1" name="embed"/>
+            <input type="submit" value="Subscribe" />
+          </form>
+        </p>
+        <p>
+          I moved to Transylvania at the age of 16. That very same
           year I was given my first computer. My interest for computers and
           especially programming grew a lot when I got involved into open
           source. I contributed with both technical and non-technical work to

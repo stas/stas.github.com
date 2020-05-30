@@ -1,0 +1,33 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[margin=1.0in]{geometry}
+\setlength\parindent{0in}
+
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+
+% Removes the numbers before sections
+\setcounter{secnumdepth}{-1}
+
+% fix for pandoc 1.14
+\providecommand{\tightlist}{
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+}
+
+\usepackage{fontspec}
+\setromanfont{Source Serif Pro Light}
+\setmonofont[Scale=1.0]{Inconsolata}
+\setsansfont[Scale=1.0]{Source Serif Pro Light}
+
+
+\begin{document}
+  \begin{raggedright}
+    $body$
+  \end{raggedright}
+
+  \vfill{}
+
+  \begin{center}
+    {\scriptsize  Last updated: \today}
+  \end{center}
+\end{document}

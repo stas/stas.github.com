@@ -15,6 +15,12 @@ like the minimalism and just generally try to keep things simple.
 \
 [`Founden`](https://founden.com) is sort of my personal brand, and you can email
 me at [stas@founden.com](mailto:stas@founden.com).
+\
+\
+
+---
+\
+\
 
 ## Spoken Languages
 
@@ -92,7 +98,7 @@ Romanian, English, Russian, Portugese, Ukrainian
 
 **2013-2014** Cofounder at Founden: [ampersate.com](http://ampersate.com/the-last-7-months-of-our-venture)
 
-> My responsability was to lead a startups studio.
+> My responsability was to co-lead technically a startups studio.
 >
 > I built a team to iterate through over 4 prototypes in less than a year. Due to
 > lack of further funding we decided to open source all of our work.
